@@ -1,0 +1,19 @@
+<section id="experience">
+  <div class="row column text-center">
+    <h2>My Experience</h2>
+    <p class="tag-line">Developer in need. Programmer at heart.</p>
+  </div>
+  <div class="row">
+    @for (group of groups; track group.title) {
+      <div class="small-12 medium-4 columns text-center experience-topics">
+        <i [class]="group.icon" aria-hidden="true"></i>
+        <h3>{{ group.title }}</h3>
+        <ul>
+          @for (skill of group.skills; track skill) {
+            <li>{{ skill }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+</section>

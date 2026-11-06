@@ -1,0 +1,27 @@
+<section id="work">
+  <div class="row column text-center">
+    <h2>Work</h2>
+    <p class="tag-line">Here are a few of my projects.</p>
+  </div>
+  <div class="row">
+    @for (project of projects; track project.name; let index = $index) {
+      <article class="small-12 medium-4 columns project-column">
+        <div class="project-card">
+          <div class="project-art" [class.project-art-alt]="index % 2 === 1" aria-hidden="true">
+            <span>{{ project.name }}</span>
+          </div>
+          <div class="details">
+            <h3>{{ project.name }}</h3>
+            <p class="platform">{{ project.platform }}</p>
+            <p class="icons" aria-label="Responsive web project">
+              <i class="fi-monitor" aria-hidden="true"></i>
+              <i class="fi-tablet-portrait" aria-hidden="true"></i>
+              <i class="fi-mobile" aria-hidden="true"></i>
+            </p>
+            <p>{{ project.description }}</p>
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+</section>

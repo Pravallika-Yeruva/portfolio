@@ -1,0 +1,42 @@
+:host {
+  display: block;
+}
+
+.hero-content {
+  padding-top: 9rem;
+}
+
+.profile-photo {
+  background: linear-gradient(145deg, #f8c3a9, #738da3);
+  border: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+#about {
+  background-image: linear-gradient(135deg, #d6e0e5, #f1d8c8);
+}
+
+#about h1 {
+  color: rgba(153, 44, 19, 0.91);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  padding-bottom: 1rem;
+}
+
+.cta {
+  margin: 2rem 0 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: inherit;
+}
+
+@media (max-width: 640px) {
+  .hero-content {
+    padding-top: 8rem;
+  }
+}
