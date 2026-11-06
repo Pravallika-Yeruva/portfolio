@@ -16,12 +16,12 @@ Once the server is running, open `http://localhost:4200/`. The application will 
 
 The page is assembled in `src/app/app.html` from standalone components in `src/app/sections/`:
 
-- `hero` — introduction and social links
+- `about-me` — introduction and social links
 - `experience` — skills
 - `projects` — project cards
 - `interests` — interests and technologies
 - `contact` — email call to action
-- `site-footer` — copyright footer
+- `footer` — copyright footer
 
 Styles and Foundation assets are under `src/`. Replace the gradient profile and project-card artwork with real images by adding them under `public/assets/` and updating the component templates/styles.
 

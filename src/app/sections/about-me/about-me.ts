@@ -2,11 +2,11 @@ import { Component, OnDestroy, OnInit, signal } from '@angular/core';
 
 @Component({
   imports: [],
-  selector: 'app-hero',
-  styleUrl: './hero.css',
-  templateUrl: './hero.html',
+  selector: 'app-about-me',
+  styleUrl: './about-me.css',
+  templateUrl: './about-me.html',
 })
-export class Hero implements OnInit, OnDestroy {
+export class AboutMe implements OnInit, OnDestroy {
   protected readonly typedText = signal('');
 
   private readonly phrases = [

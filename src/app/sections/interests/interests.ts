@@ -23,6 +23,7 @@ export class Interests {
     'MySQL',
     'GitHub',
     'Copilot',
+    'Claude',
     'Music',
     'Socializing',
   ];

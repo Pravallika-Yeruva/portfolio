@@ -20,7 +20,7 @@ describe('App', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
 
-    expect(compiled.querySelector('app-hero h1')?.textContent).toContain("Hi, I'm Pravallika.");
+    expect(compiled.querySelector('app-about-me h1')?.textContent).toContain("Hi, I'm Pravallika.");
     expect(compiled.querySelector('#experience')).toBeTruthy();
     expect(compiled.querySelector('#work')).toBeTruthy();
     expect(compiled.querySelector('#teaching')).toBeTruthy();
