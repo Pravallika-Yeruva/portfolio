@@ -4,10 +4,10 @@ import { Experience } from './sections/experience/experience';
 import { AboutMe } from './sections/about-me/about-me';
 import { Interests } from './sections/interests/interests';
 import { Projects } from './sections/projects/projects';
-import { SiteFooter } from './sections/site-footer/site-footer';
+import { Footer } from './sections/footer/footer';
 
 @Component({
-  imports: [AboutMe, Experience, Projects, Interests, Contact, SiteFooter],
+  imports: [AboutMe, Experience, Projects, Interests, Contact, Footer],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
