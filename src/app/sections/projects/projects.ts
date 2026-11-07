@@ -12,12 +12,6 @@ export class Projects {
       name: 'TicTacToe',
       platform: 'Web',
       description: 'Play it. Win it. A fun game for adults and kids.',
-    },
-    {
-      name: 'Disney+ Clone',
-      platform: 'Web',
-      description:
-        'A streaming service clone inspired by Disney, Pixar, Marvel, Star Wars, and National Geographic.',
-    },
+    }
   ];
 }
