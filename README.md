@@ -14,13 +14,13 @@ Once the server is running, open `http://localhost:4200/`. The application will 
 
 ## Portfolio components
 
-The page is assembled in `src/app/app.html` from standalone components in `src/app/sections/`:
+The page is assembled in `src/app/app.component.html` from standalone components in `src/app/components/`:
 
 - `about-me` — introduction and social links
-- `experience` — skills
+- `experience` — professional summary, skills, and work history
+- `education` — education and work authorization
 - `projects` — project cards
 - `interests` — interests and technologies
-- `contact` — email call to action
 - `footer` — copyright footer
 
 Styles and Foundation assets are under `src/`. Replace the gradient profile and project-card artwork with real images by adding them under `public/assets/` and updating the component templates/styles.

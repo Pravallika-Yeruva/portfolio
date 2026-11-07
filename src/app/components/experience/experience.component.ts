@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   imports: [],
   selector: 'app-experience',
-  styleUrl: './experience.scss',
-  templateUrl: './experience.html',
+  styleUrl: './experience.component.scss',
+  templateUrl: './experience.component.html',
 })
 export class Experience {
   protected readonly summary =

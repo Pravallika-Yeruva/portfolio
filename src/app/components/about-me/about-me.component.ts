@@ -6,8 +6,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
   standalone: true,
   imports: [FaIconComponent],
   selector: 'app-about-me',
-  styleUrl: './about-me.scss',
-  templateUrl: './about-me.html',
+  styleUrl: './about-me.component.scss',
+  templateUrl: './about-me.component.html',
 })
 export class AboutMe implements OnInit, OnDestroy {
   protected readonly typedText = signal('');

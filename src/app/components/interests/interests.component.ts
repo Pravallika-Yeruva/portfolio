@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   imports: [],
   selector: 'app-interests',
-  styleUrl: './interests.scss',
-  templateUrl: './interests.html',
+  styleUrl: './interests.component.scss',
+  templateUrl: './interests.component.html',
 })
 export class Interests {
   protected readonly interests = [
