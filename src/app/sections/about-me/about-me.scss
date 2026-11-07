@@ -1,0 +1,132 @@
+:host {
+  display: block;
+}
+
+.about-content {
+  padding-top: 5rem;
+}
+
+.profile-photo {
+  width: 12rem;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid rgba(218, 197, 193, 0.91);
+  background-image: url('../../../assets/ProfilePhoto.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#about {
+  background-image: linear-gradient(135deg, #d6e0e5, #f1d8c8);
+}
+
+#about h1 {
+  color: rgba(153, 44, 19, 0.91);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  padding-bottom: 1rem;
+}
+
+.details h1 {
+  line-height: 1.2;
+}
+
+#about h1 .typed-line {
+  display: flex;
+  min-height: 1.4em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  white-space: nowrap;
+  font-size: clamp(0.75rem, 3.2vw, 1.75rem);
+  line-height: 1.4;
+}
+
+.about-summary {
+  max-width: 52rem;
+  margin: 1.5rem auto 0;
+  color: #38434a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto 1rem;
+}
+
+.link-group {
+  flex: 0 1 10rem;
+  min-width: 9rem;
+  padding: 1rem 1.25rem;
+}
+
+.link-group h4 {
+  margin: 0 0 1rem;
+  color: rgba(153, 44, 19, 0.91);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.link-group h4::after {
+  display: block;
+  width: 2rem;
+  height: 2px;
+  margin: 0.45rem auto 0;
+  background-color: rgba(153, 44, 19, 0.55);
+  content: '';
+}
+
+.contact-links,
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  color: rgba(153, 44, 19, 0.91);
+  font-size: 1.35rem;
+}
+
+.contact-links a,
+.social-links a {
+  display: grid;
+  box-sizing: border-box;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border-radius: 50%;
+  color: inherit;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-links a:hover,
+.social-links a:hover,
+.contact-links a:focus-visible,
+.social-links a:focus-visible {
+  transform: translateY(-2px);
+  color: #7d2411;
+}
+
+.contact-links a:focus-visible,
+.social-links a:focus-visible {
+  outline: 2px solid #992c13;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .about-content {
+    padding-top: 8rem;
+  }
+
+  .profile-links {
+    gap: 0.75rem;
+  }
+}

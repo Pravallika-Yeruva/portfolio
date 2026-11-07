@@ -1,0 +1,97 @@
+:host {
+  display: block;
+}
+
+#education {
+  padding: clamp(3rem, 6vw, 5rem) 1.25rem;
+  background: #f3f6f8;
+}
+
+.education-container {
+  width: min(100%, 70rem);
+  margin: 0 auto;
+}
+
+.education-header {
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+#education .education-header h2 {
+  font-size: clamp(1.7rem, 5vw, 3rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: #8c3a2a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+#education .education-header h2 {
+  margin: 0;
+  color: #294b63;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #dce5ea;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(20, 38, 52, 0.08);
+}
+
+.education-mark {
+  display: grid;
+  flex: 0 0 3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #4c6d86;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#education .education-details h3 {
+  margin: 0;
+  color: #294b63;
+  font-size: 1.25rem;
+}
+
+.degree,
+.dates {
+  margin: 0.4rem 0 0;
+  color: #465761;
+  line-height: 1.5;
+}
+
+.degree {
+  font-weight: 600;
+}
+
+.dates {
+  color: #697984;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+}

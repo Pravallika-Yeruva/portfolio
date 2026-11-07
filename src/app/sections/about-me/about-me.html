@@ -1,21 +1,34 @@
 <section id="about">
   <div class="row about-content">
     <div class="small-12 large-8 large-offset-2 columns text-center">
-      <div class="profile-photo" role="img" aria-label="Profile photo placeholder"></div>
+      <div class="profile-photo" role="img" aria-label="Portrait of Pravallika Yeruva"></div>
       <div class="details">
-        <h1>Hi, I'm Pravallika. I...<br /><span>{{ typedText() }}</span></h1>
+        <h1>Pravallika Yeruva<br /><span class="typed-line">{{ typedText() }}</span></h1>
       </div>
-      <div class="cta">
-        <a class="my-button cta-button" href="mailto:pravallika.yeruva06@gmail.com">Get In Touch</a>
+      <div class="profile-links" aria-label="Contact and social profiles">
+        <section class="link-group" aria-labelledby="contact-heading">
+          <h4 id="contact-heading">Contact</h4>
+          <nav class="contact-links" aria-labelledby="contact-heading">
+            <a href="tel:+17029576123" aria-label="Call Pravallika">
+              <i class="fi-telephone" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:pravallika.yeruva06@gmail.com" aria-label="Email Pravallika">
+              <i class="fi-mail" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </section>
+        <section class="link-group" aria-labelledby="social-heading">
+          <h4 id="social-heading">Social</h4>
+          <nav class="social-links" aria-labelledby="social-heading">
+            <a href="https://github.com/Pravallika-Yeruva" aria-label="GitHub">
+              <fa-icon [icon]="faGithub" aria-hidden="true"></fa-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/pravallika-yeruva/" aria-label="LinkedIn">
+              <fa-icon [icon]="faLinkedin" aria-hidden="true"></fa-icon>
+            </a>
+          </nav>
+        </section>
       </div>
-      <nav class="social-links" aria-label="Social profiles">
-        <a href="https://github.com/Pravallika-Yeruva" aria-label="GitHub">
-          <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/pravallika-yeruva/" aria-label="LinkedIn">
-          <span>LinkedIn</span>
-        </a>
-      </nav>
     </div>
   </div>
 </section>

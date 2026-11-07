@@ -26,9 +26,9 @@
               }
             ],
             "styles": [
-              "src/assets/foundation.min.css",
-              "src/assets/foundation-icons.css",
-              "src/styles.css"
+              "src/assets/foundation.min.scss",
+              "src/assets/foundation-icons.scss",
+              "src/styles.scss"
             ]
           },
           "configurations": {

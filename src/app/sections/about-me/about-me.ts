@@ -1,19 +1,24 @@
 import { Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+  
 
 @Component({
-  imports: [],
+  imports: [FontAwesomeModule],
   selector: 'app-about-me',
-  styleUrl: './about-me.css',
+  styleUrl: './about-me.scss',
   templateUrl: './about-me.html',
 })
 export class AboutMe implements OnInit, OnDestroy {
   protected readonly typedText = signal('');
+  protected readonly faGithub = faGithub;
+  protected readonly faLinkedin = faLinkedin;
 
   private readonly phrases = [
-    'am a Front-End Developer.',
-    'love to learn new technologies.',
-    'want to become a Python developer.',
-    'am looking for new opportunities.',
+    'Angular Front-End Developer',
+    'Passionate about modern web technologies',
+    'Exploring full-stack development',
+    'Open to new opportunities',
   ];
   private phraseIndex = 0;
   private characterIndex = 0;

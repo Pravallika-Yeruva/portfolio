@@ -1,16 +1,17 @@
 <section id="teaching">
-  <h2 class="text-center">What I like the most?</h2>
-  <div class="row">
-    <div class="small-12 medium-8 medium-offset-2 columns">
-      <p class="text-center tag-line">
-        I've been exploring different programming languages and technologies. Here are some of the
-        topics I enjoy learning about and working on.
+  <div class="interests-container">
+    <header class="interests-header">
+      <p class="eyebrow">Curiosity beyond the code</p>
+      <h2>What Inspires Me</h2>
+      <p class="tag-line">
+        From exploring new technologies to enjoying music and good company, these are a few things
+        that keep me curious, creative, and growing.
       </p>
-      <ul class="interest-list" aria-label="Interests and technologies">
-        @for (interest of interests; track interest) {
-          <li>{{ interest }}</li>
-        }
-      </ul>
-    </div>
+    </header>
+    <ul class="interest-list" aria-label="Interests and technologies">
+      @for (interest of interests; track interest) {
+        <li>{{ interest }}</li>
+      }
+    </ul>
   </div>
 </section>

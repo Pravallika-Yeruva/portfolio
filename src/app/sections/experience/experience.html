@@ -1,19 +1,51 @@
 <section id="experience">
-  <div class="row column text-center">
-    <h2>My Experience</h2>
-    <p class="tag-line">Developer in need. Programmer at heart.</p>
-  </div>
-  <div class="row">
-    @for (group of groups; track group.title) {
-      <div class="small-12 medium-4 columns text-center experience-topics">
-        <i [class]="group.icon" aria-hidden="true"></i>
-        <h3>{{ group.title }}</h3>
-        <ul>
-          @for (skill of group.skills; track skill) {
-            <li>{{ skill }}</li>
-          }
-        </ul>
+  <div class="experience-container">
+    <header class="experience-header">
+      <p class="eyebrow">Career & expertise</p>
+      <h2>Professional Experience</h2>
+    </header>
+
+    <section class="summary-card" aria-labelledby="summary-heading">
+      <h3 id="summary-heading">Professional Summary</h3>
+      <p>{{ summary }}</p>
+    </section>
+
+    <section class="skills-section" aria-labelledby="skills-heading">
+      <h3 id="skills-heading">Technical Skills</h3>
+      <div class="skills-grid">
+        @for (group of skillGroups; track group.title) {
+          <article class="skill-card">
+            <h4>{{ group.title }}</h4>
+            <ul>
+              @for (skill of group.skills; track skill) {
+                <li>{{ skill }}</li>
+              }
+            </ul>
+          </article>
+        }
       </div>
-    }
+    </section>
+
+    <section class="career-section" aria-labelledby="career-heading">
+      <h3 id="career-heading">Career History</h3>
+      <div class="career-list">
+        @for (job of jobs; track job.company) {
+          <article class="career-card">
+            <header class="career-card-header">
+              <div>
+                <h4>{{ job.company }}</h4>
+                <p class="job-role">{{ job.role }}</p>
+              </div>
+              <p class="job-dates">{{ job.dates }}</p>
+            </header>
+            <ul class="job-highlights">
+              @for (highlight of job.highlights; track highlight) {
+                <li>{{ highlight }}</li>
+              }
+            </ul>
+          </article>
+        }
+      </div>
+    </section>
   </div>
 </section>

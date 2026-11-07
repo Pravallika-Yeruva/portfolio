@@ -1,0 +1,167 @@
+:host {
+  display: block;
+}
+
+#experience {
+  padding: clamp(3rem, 7vw, 6rem) 1.25rem;
+  background-color: #4c6d86;
+  color: #263744;
+}
+
+.experience-container {
+  width: min(100%, 70rem);
+  margin: 0 auto;
+}
+
+.experience-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.experience-header .eyebrow {
+  margin: 0 0 0.5rem;
+  color: #ffd1b8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+#experience .experience-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.summary-card,
+.skill-card,
+.career-card {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(20, 38, 52, 0.12);
+}
+
+.summary-card {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+#experience .summary-card h3 {
+  margin: 0 0 1rem;
+  color: #294b63;
+  font-size: 1.4rem;
+}
+
+#experience .skills-section > h3,
+#experience .career-section > h3 {
+  margin: 0 0 1rem;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.summary-card p {
+  margin: 0;
+  color: #465761;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.skills-section,
+.career-section {
+  margin-top: 3rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  padding: 1.25rem;
+}
+
+#experience .skill-card h4 {
+  margin: 0 0 0.8rem;
+  color: #8c3a2a;
+  font-size: 1.05rem;
+}
+
+.skill-card ul,
+.job-highlights {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.skill-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-card li {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #d5e0e7;
+  border-radius: 999px;
+  background: #f3f7f9;
+  color: #354c5a;
+  font-size: 0.85rem;
+}
+
+.career-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.career-card {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.career-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e8ec;
+}
+
+#experience .career-card-header h4 {
+  margin: 0;
+  color: #294b63;
+  font-size: 1.25rem;
+}
+
+.job-role,
+.job-dates {
+  margin: 0.35rem 0 0;
+  color: #8c3a2a;
+  font-weight: 600;
+}
+
+.job-dates {
+  color: #596c77;
+  font-size: 0.95rem;
+}
+
+.job-highlights {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  color: #465761;
+  line-height: 1.65;
+}
+
+.job-highlights li {
+  padding-left: 0.25rem;
+}
+
+@media (max-width: 640px) {
+  #experience {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
