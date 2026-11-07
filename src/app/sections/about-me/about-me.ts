@@ -1,10 +1,10 @@
 import { Component, OnDestroy, OnInit, signal } from '@angular/core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-  
 
 @Component({
-  imports: [FontAwesomeModule],
+  standalone: true,
+  imports: [FaIconComponent],
   selector: 'app-about-me',
   styleUrl: './about-me.scss',
   templateUrl: './about-me.html',
