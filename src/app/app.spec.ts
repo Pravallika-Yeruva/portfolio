@@ -1,22 +1,22 @@
 import { TestBed } from '@angular/core/testing';
-import { App } from './app.component';
+import { PortfolioComponent } from './portfolio.component';
 
-describe('App', () => {
+describe('PortfolioComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [PortfolioComponent],
     })
       .compileComponents();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(App);
+    const fixture = TestBed.createComponent(PortfolioComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
   it('should render the portfolio sections', () => {
-    const fixture = TestBed.createComponent(App);
+    const fixture = TestBed.createComponent(PortfolioComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
 

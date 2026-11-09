@@ -1,16 +1,10 @@
 import { Component } from '@angular/core';
-import { Education } from './components/education/education.component';
-import { Experience } from './components/experience/experience.component';
-import { AboutMe } from './components/about-me/about-me.component';
-import { Interests } from './components/interests/interests.component';
-import { Projects } from './components/projects/projects.component';
-import { Footer } from './components/footer/footer.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  imports: [AboutMe, Experience, Education, Projects, Interests, Footer],
+  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.component.scss',
-  templateUrl: './app.component.html',
+  template: '<router-outlet />',
 })
 export class App {
 }

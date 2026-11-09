@@ -10,8 +10,17 @@
     @for (project of projects; track project.name; let index = $index) {
       <article class="small-12 medium-4 columns project-column">
         <div class="project-card">
+          @if (project.href) {
+            <a
+              class="project-card-link"
+              [href]="project.href"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="'Open ' + project.name + ' in a new tab'"
+            ></a>
+          }
           <div class="project-art" [class.project-art-alt]="index % 2 === 1" aria-hidden="true">
-            <span>{{ project.name }}</span>
+            <img [src]="project.image" alt="" />
           </div>
           <div class="details">
             <h3>{{ project.name }}</h3>
