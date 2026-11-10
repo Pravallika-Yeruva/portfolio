@@ -9,6 +9,13 @@ import { Component } from '@angular/core';
 export class Projects {
   protected readonly projects = [
     {
+      name: 'Weather App',
+      platform: 'Web',
+      description: 'A weather app built with Angular.',
+      image: '/weather-app-preview.svg',
+      href: '#/weather-app',
+    },
+    {
       name: 'Tic Tac Toe',
       platform: 'Web',
       description: 'Play it. Win it. A fun game for adults and kids.',

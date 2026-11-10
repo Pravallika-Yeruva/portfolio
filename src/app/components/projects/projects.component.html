@@ -6,9 +6,9 @@
       Small projects where I explore ideas, practice my skills, and build things I enjoy.
     </p>
   </div>
-  <div class="row">
+  <div class="project-grid">
     @for (project of projects; track project.name; let index = $index) {
-      <article class="small-12 medium-4 columns project-column">
+      <article class="project-column">
         <div class="project-card">
           @if (project.href) {
             <a
