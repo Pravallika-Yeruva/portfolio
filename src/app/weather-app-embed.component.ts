@@ -1,4 +1,5 @@
-import { Component, OnDestroy } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -41,13 +42,40 @@ import { Title } from '@angular/platform-browser';
 })
 export class WeatherAppEmbedComponent implements OnDestroy {
   private readonly previousTitle: string;
+  private readonly favicon: HTMLLinkElement;
+  private readonly previousFavicon: string | null;
 
-  constructor(private readonly title: Title) {
+  constructor(
+    private readonly title: Title,
+    @Inject(DOCUMENT) document: Document,
+  ) {
     this.previousTitle = this.title.getTitle();
-    this.title.setTitle('Weather App | Pravallika Yeruva');
+    this.favicon = this.getFavicon(document);
+    this.previousFavicon = this.favicon.getAttribute('href');
+    this.title.setTitle('Weather App');
+    this.favicon.href = '/weather-app-icon.svg';
   }
 
   ngOnDestroy(): void {
     this.title.setTitle(this.previousTitle);
+    this.restoreFavicon();
+  }
+
+  private getFavicon(document: Document): HTMLLinkElement {
+    const favicon = document.querySelector<HTMLLinkElement>('link[rel="icon"]');
+    if (!favicon) {
+      throw new Error('The document is missing its favicon link.');
+    }
+
+    return favicon;
+  }
+
+  private restoreFavicon(): void {
+    if (this.previousFavicon === null) {
+      this.favicon.removeAttribute('href');
+      return;
+    }
+
+    this.favicon.setAttribute('href', this.previousFavicon);
   }
 }
